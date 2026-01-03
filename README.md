@@ -2,7 +2,7 @@
 
 ![Malaria Risk Map](Images/malaria_risk_map.png)
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)  
 - [Author](#author)
@@ -20,7 +20,7 @@
 
 ---
 
-## 🏥 Project Overview
+## Project Overview
 
 Malaria remains a major public health concern in Burkina Faso. This project aims to predict urban malaria prevalence using a combination of spatial-temporal survey data and environmental covariates. By integrating Random Forest and XGBoost models with geospatial analysis, we identify hotspots of malaria risk in Ouagadougou and highlight key environmental drivers.  
 
@@ -28,14 +28,7 @@ Malaria remains a major public health concern in Burkina Faso. This project aims
 
 ---
 
-## 👤 Author
-
-**Geu Aguto Garang Bior**  
-*Software Engineering Student – Machine Learning | Health Mission Student*
-
----
-
-## 📊 Data
+## Data
 
 The project uses malaria prevalence survey data and environmental variables for Burkina Faso:
 
@@ -50,11 +43,11 @@ The project uses malaria prevalence survey data and environmental variables for 
 - **Season (SEASON_Wet123)**
 - **PfPR2_10** — Plasmodium falciparum prevalence in children 2–10 years
 
-> **📌 Note:** Sensitive or restricted datasets are stored locally in `data/raw/` and are not included in the repository.
+> ** Note:** Sensitive or restricted datasets are stored locally in `data/raw/` and are not included in the repository.
 
 ---
 
-## 🔬 Methods
+## Methods
 
 ### Data Preprocessing
 - Handle missing values for environmental covariates using **median imputation**
@@ -74,7 +67,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 ---
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
 ### Random Forest Regressor
 
@@ -105,7 +98,7 @@ xgb.fit(X_train, y_train)
 
 ---
 
-## 📈 Model Evaluation
+## Model Evaluation
 
 - **Metrics:** RMSE, R² Score
 - **Residual Analysis:** Check for bias and systematic errors in predictions
@@ -113,7 +106,7 @@ xgb.fit(X_train, y_train)
 
 ---
 
-## 🗺️ Spatial Analysis
+## Spatial Analysis
 
 - Convert predictions to GeoDataFrame using **geopandas**
 - Generate malaria risk maps to visualize hotspots across Ouagadougou
@@ -121,7 +114,7 @@ xgb.fit(X_train, y_train)
 
 ---
 
-## 📊 Results
+## Results
 
 ### Random Forest Performance
 | Metric | Value |
@@ -143,13 +136,13 @@ xgb.fit(X_train, y_train)
 
 ### Spatial Hotspots
 
-🔴 **High-risk zones** identified in central and northern districts of Ouagadougou
+**High-risk zones** identified in central and northern districts of Ouagadougou
 
-> **📁 Output Files:** Maps and CSV predictions are available in the `outputs/` folder.
+> ** Output Files:** Maps and CSV predictions are available in the `outputs/` folder.
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 urban-malaria-risk-burkina-faso/
@@ -178,7 +171,7 @@ urban-malaria-risk-burkina-faso/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repository
 
@@ -213,7 +206,7 @@ jupyter notebook notebooks/urban_malaria_prediction_burkina_faso.ipynb
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 - **Python:** 3.9 or higher
 - **Data Science:**
@@ -231,8 +224,12 @@ jupyter notebook notebooks/urban_malaria_prediction_burkina_faso.ipynb
 For detailed versions, see `requirements.txt`.
 
 ---
+## Author
 
-## 📚 References
+**Geu Aguto Garang Bior**  
+*Software Engineering Student – Machine Learning | Health Mission Student*
+
+## References
 
 - Baragatti, M., et al. (2009). Malaria prevalence survey data, Burkina Faso.
 - WHO. (2022). World Malaria Report 2022. https://www.who.int/publications/i/item/9789240064898
@@ -242,7 +239,7 @@ For detailed versions, see `requirements.txt`.
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
